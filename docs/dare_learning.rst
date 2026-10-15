@@ -179,6 +179,8 @@ The DARE-specific work is in:
   ``kolibri/core/test/test_theme.py``: allow a theme SVG to supply the favicon
   when no ICO is configured, while retaining the existing ICO priority and
   default fallback.
+* ``packages/kolibri/styles/internal/themeSpec.js``: declare the PWA icon size
+  used by the theme logo configuration.
 * ``packages/kolibri/styles/internal/__tests__/initializeTheme.spec.js``:
   keep the frontend theme fixture aligned with the configured DARE theme.
 
