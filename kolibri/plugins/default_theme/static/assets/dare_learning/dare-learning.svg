@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <title>DARE Learning</title>
+  <rect width="512" height="512" rx="96" fill="#32145f"/>
+  <circle cx="256" cy="164" r="54" fill="#f2bd3d"/>
+  <path d="M88 255c61-26 116-20 168 13 52-33 107-39 168-13v137c-61-26-116-20-168 13-52-33-107-39-168-13V255Z" fill="#fff"/>
+  <path d="M256 268v137M124 279c42-13 81-8 116 12m-116 21c42-13 81-8 116 12m148-45c-42-13-81-8-116 12m116 21c-42-13-81-8-116 12" fill="none" stroke="#32145f" stroke-linecap="round" stroke-width="12"/>
+</svg>
