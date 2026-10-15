@@ -36,6 +36,10 @@ const _imageSpec = {
     type: String,
     default: null,
   },
+  size: {
+    type: String,
+    default: null,
+  },
   maskable: {
     type: Boolean,
     default: false,
