@@ -45,16 +45,25 @@ def theme_favicon():
     Render a favicon link to put in the <head> tag of base.html, if a favicon is
     provided by the theme. If not, a default will be returned.
     """
+    logos = ThemeHook.get_theme().get("logos", [])
     favicon_urls = [
         logo["src"]
-        for logo in ThemeHook.get_theme().get("logos", [])
+        for logo in logos
         if logo.get("content_type", "") == "image/vnd.microsoft.icon"
     ]
 
-    # Choose the first available .ico file. It's unlikely there's more than
-    # one specified in the theme.
+    # Prefer a raster favicon when available, then fall back to a theme SVG.
     favicon_url = (
-        favicon_urls[0] if favicon_urls else static("assets/favicons/logo.ico")
+        favicon_urls[0]
+        if favicon_urls
+        else next(
+            (
+                logo["src"]
+                for logo in logos
+                if logo.get("content_type", "") == "image/svg+xml"
+            ),
+            static("assets/favicons/logo.ico"),
+        )
     )
 
     return format_html('<link rel="shortcut icon" href="{}">', favicon_url)

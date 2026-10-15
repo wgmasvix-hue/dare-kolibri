@@ -19,6 +19,14 @@ This repository is for software developers wishing to contribute to Kolibri. If 
 
 Developed with and for the community by [Learning Equality](https://learningequality.org/).
 
+## DARE Learning
+
+This repository customizes Kolibri as DARE Learning while retaining Kolibri's
+offline-first platform and its upstream license and attribution. See the
+[DARE Learning architecture and development guide](docs/dare_learning.rst) for
+branding, curriculum metadata, offline workflows, and proposed integration
+boundaries.
+
 ## How can I use it?
 
 Kolibri is [available for download](https://learningequality.org/download/) from our website.
