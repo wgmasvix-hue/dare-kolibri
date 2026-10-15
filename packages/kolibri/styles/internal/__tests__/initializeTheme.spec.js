@@ -67,7 +67,6 @@ function initializedThemeHookTheme() {
   return {
     ...defaultThemeHookTheme(),
     tokenMapping: {},
-    sideNav: {},
     appBar: {},
   };
 }
@@ -105,7 +104,9 @@ describe('initializeTheme', () => {
   });
 
   it('populates sections the theme hook omits entirely', () => {
-    pluginData.kolibriTheme = defaultThemeHookTheme();
+    const theme = defaultThemeHookTheme();
+    delete theme.sideNav;
+    pluginData.kolibriTheme = theme;
 
     initializeTheme();
 

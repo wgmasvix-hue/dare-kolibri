@@ -3,6 +3,7 @@ from django.templatetags.static import static
 from kolibri.core import theme_hook
 from kolibri.plugins import KolibriPluginBase
 from kolibri.plugins.hooks import register_hook
+from kolibri.utils.translation import gettext as _
 
 
 class DefaultThemePlugin(KolibriPluginBase):
@@ -51,7 +52,7 @@ class DefaultThemeHook(theme_hook.ThemeHook):
                         "src": static("assets/dare_learning/dare-learning.svg"),
                         "alt": "DARE Learning",
                     },
-                    "paragraphArray": ["African knowledge. African learning."],
+                    "paragraphArray": [_("African knowledge. African learning.")],
                 },
             },
             "logos": [
