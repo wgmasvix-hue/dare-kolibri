@@ -56,25 +56,11 @@ class DefaultThemeHook(theme_hook.ThemeHook):
             },
             "logos": [
                 {
-                    "src": static("assets/dare_learning/dare-learning.ico"),
-                    "content_type": "image/vnd.microsoft.icon",
-                    "size": "32x32",
-                },
-                {
                     "src": static("assets/dare_learning/dare-learning.svg"),
                     "content_type": "image/svg+xml",
+                    "alt": "DARE Learning",
                     "maskable": False,
                     "size": "any",
-                },
-                {
-                    "src": static("assets/dare_learning/dare-learning-192.png"),
-                    "content_type": "image/png",
-                    "size": "192x192",
-                },
-                {
-                    "src": static("assets/dare_learning/dare-learning-512.png"),
-                    "content_type": "image/png",
-                    "size": "512x512",
                 },
             ],
         }
